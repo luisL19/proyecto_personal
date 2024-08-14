@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiDulceOnline – Tienda de Dulces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MiDulceOnline</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Inicio</a></li>
+                <li><a href="#" onclick="loadPage('regiones')">Regiones</a></li>
+                <li><a href="#" onclick="loadPage('precios')">Precios</a></li>
+                <li><a href="#" onclick="loadPage('carrito')">Carrito</a></li>
+                <li><a href="#" onclick="openRegisterModal()">Registrar Dulces</a></li>
+                <li><a href="#" onclick="openModal()">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Contenido dinámico cargado por JavaScript -->
+    </main>
+
+    <!-- Modal para el registro de dulces -->
+    <div id="modal-registro-dulce" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Registrar Nuevo Dulce</h2>
+            <form id="form-registro">
+                <label for="nombre-dulce">Nombre:</label>
+                <input type="text" id="nombre-dulce" name="nombre-dulce" required>
+    
+                <label for="categoria-dulce">Categoría:</label>
+                <select id="categoria-dulce" name="categoria-dulce" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="dulce">Dulce</option>
+                    <option value="salado">Salado</option>
+                </select>
+    
+                <label for="region-dulce">Región:</label>
+                <select id="region-dulce" name="region-dulce" required>
+                    <option value="">Selecciona una región</option>
+                    <option value="andina">Andina</option>
+                    <option value="caribe">Caribe</option>
+                    <option value="pacifica">Pacífica</option>
+                    <option value="amazonia">Amazonia</option>
+                    <option value="orinoquia">Orinoquía</option>
+                </select>
+    
+                <label for="precio-dulce">Precio:</label>
+                <select id="precio-dulce" name="precio-dulce" required>
+                    <option value="">Selecciona un precio</option>
+                    <option value="bajo">Bajo</option>
+                    <option value="medio">Medio</option>
+                    <option value="alto">Alto</option>
+                </select>
+    
+                <button type="submit">Registrar Dulce</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para el registro de cliente -->
+    <div id="modal-cliente" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Registro de Cliente</h2>
+            <form id="form-registro-cliente">
+                <label for="nombre-cliente">Nombre:</label>
+                <input type="text" id="nombre-cliente" name="nombre-cliente" required>
+        
+                <label for="email-cliente">Email:</label>
+                <input type="email" id="email-cliente" name="email-cliente" required>
+        
+                <label for="direccion-entrega">Dirección de Entrega:</label>
+                <input type="text" id="direccion-entrega" name="direccion-entrega" required>
+        
+                <button type="submit">Realizar Compra</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor para la animación de texto -->
+    <div id="animacion-texto" class="texto-animado">
+        <span>B</span><span>i</span><span>e</span><span>n</span><span>v</span><span>e</span><span>n</span><span>i</span><span>d</span><span>o</span>
+        <span>&nbsp;</span><span>a</span><span>&nbsp;</span><span>M</span><span>i</span><span>D</span><span>u</span><span>l</span><span>c</span><span>e</span><span>O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span><span>!</span>
+        <span>&nbsp;</span><span>d</span><span>o</span><span>n</span><span>d</span><span>e</span><span>&nbsp;</span><span>e</span><span>n</span><span>c</span><span>o</span><span>n</span><span>t</span><span>r</span><span>a</span><span>r</span><span>a</span><span>s</span>
+        <span>&nbsp;</span><span>u</span><span>n</span><span>a</span><span>&nbsp;</span><span>g</span><span>r</span><span>a</span><span>n</span><span>&nbsp;</span><span>v</span><span>a</span><span>r</span><span>i</span><span>e</span><span>d</span><span>a</span><span>d</span>
+        <span>&nbsp;</span><span>d</span><span>e</span><span>&nbsp;</span><span>d</span><span>u</span><span>l</span><span>c</span><span>e</span><span>s</span><span>&nbsp;</span><span>t</span><span>í</span><span>p</span><span>i</span><span>c</span><span>o</span><span>s</span>
+        <span>&nbsp;</span><span>d</span><span>e</span><span>&nbsp;</span><span>n</span><span>u</span><span>e</span><span>s</span><span>t</span><span>r</span><span>o</span><span>&nbsp;</span><span>p</span><span>a</span><span>í</span><span>s</span>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ProgrammerL.L. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/alejo.becerra.3" target="_blank" class="social-icon" id="facebook-icon">
+                    <img src="img/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/l_am._.alejo/" target="_blank" class="social-icon" id="instagram-icon">
+                    <img src="img/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

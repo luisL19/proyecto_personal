@@ -1,0 +1,378 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #FF4500;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo para la sección de productos */
+#productos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#productos h2 {
+    color: #FF4500;
+}
+
+#filtros {
+    margin-bottom: 20px;
+}
+
+#filtros select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#filtros button {
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#filtros button:hover {
+    background-color: #FF6347;
+}
+
+/* Estilo para la lista de productos */
+#lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.producto h3 {
+    color: #FF4500;
+}
+
+.producto button {
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #FF6347;
+}
+
+/* Estilo para el formulario de registro de nuevos dulces */
+#registro {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registro h2 {
+    color: #FF4500;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+#form-registro label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+#form-registro input, #form-registro select, #form-registro textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px); /* Ajustar para el padding */
+}
+
+#form-registro input:focus, #form-registro select:focus, #form-registro textarea:focus {
+    border-color: #FF4500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+}
+
+#form-registro button {
+    background-color: #FF4500;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-registro button:hover {
+    background-color: #FF6347;
+}
+
+/* Estilo para la sección del formulario de cliente en el modal */
+#registro-cliente {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registro-cliente h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#form-registro-cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-registro-cliente label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#form-registro-cliente input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#form-registro-cliente button {
+    padding: 10px;
+    background-color: #ff3131;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-registro-cliente button:hover {
+    background-color: #b30000;
+}
+
+/* Agregar estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para los botones en los formularios */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos básicos para el contenedor de animación */
+.texto-animado {
+    position: relative;
+    width: calc(100% - 20px);
+    margin-top: 70px; /* Ajusta según el diseño */
+    padding: 10px;
+    background: rgb(253 253 253 / 0%);
+    text-align: center;
+    font-size: 27px;
+    overflow: hidden;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    color: #000; /* Color base para el texto */
+    animation: colorChange 6s ease-in-out infinite; /* Cambia el color globalmente */
+}
+
+/* Estilos para cada letra */
+.texto-animado span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards, jump 1s ease-in-out infinite;
+    margin: 0 2px; /* Espaciado entre letras */
+}
+
+/* Animación para que cada letra aparezca una por una */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animación estilo escalera */
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Animación de cambio de color global */
+@keyframes colorChange {
+    0% { color: #ff6347; } /* Tomate (rojo) */
+    25% { color: #ffcc00; } /* Amarillo */
+    50% { color: #32cd32; } /* Lima */
+    75% { color: #1e90ff; } /* Azul */
+    100% { color: #ff6347; } /* Tomate (rojo) */
+}
+
+/* Asegúrate de que cada letra tenga un retraso de aparición diferente para el efecto de escalera */
+.texto-animado span:nth-child(1) { animation: fadeIn 1s ease-in-out 0.1s forwards, jump 1s ease-in-out infinite; }
+.texto-animado span:nth-child(2) { animation: fadeIn 1s ease-in-out 0.2s forwards, jump 1s ease-in-out infinite; }
+.texto-animado span:nth-child(3) { animation: fadeIn 1s ease-in-out 0.3s forwards, jump 1s ease-in-out infinite; }
+/* Añadir más reglas similares para cada letra, ajustando el delay para el efecto de escalera */
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #f54222; /* Color de fondo claro, puedes cambiarlo según el esquema de colores de tu página */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0; /* Línea delgada en la parte superior del footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #000000; /* Color del texto */
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 26px; /* Tamaño de los íconos, puedes ajustar según tus necesidades */
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Dulces – MiDulceOnline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="registro">
+        <h2>Registrar Dulces</h2>
+        <form id="form-registro">
+            <label for="nombre">Nombre del Dulce:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="dulce">Dulce</option>
+                <option value="salado">Salado</option>
+            </select>
+            <label for="region">Región:</label>
+            <select id="region" name="region" required>
+                <option value="andina">Andina</option>
+                <option value="caribe">Caribe</option>
+                <option value="pacifica">Pacífica</option>
+                <option value="amazonia">Amazonia</option>
+                <option value="orinoquia">Orinoquía</option>
+            </select>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+            <label for="descripcion">Descripción del Producto:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            <button type="submit">Registrar Dulce</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

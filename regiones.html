@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Típicos por Región – MiDulceOnline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MiDulceOnline</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Inicio</a></li>
+                <li><a href="#" onclick="loadPage('categorias')">Categorías</a></li>
+                <li><a href="regiones.html">Regiones</a></li>
+                <li><a href="#" onclick="loadPage('precios')">Precios</a></li>
+                <li><a href="#" onclick="loadPage('carrito')">Carrito</a></li>
+                <li><a href="#" onclick="openRegisterModal()">Registrar Dulces</a></li>
+                <li><a href="#" onclick="openModal()">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="regiones">
+            <h2>Dulces Típicos por Región</h2>
+            <div id="lista-regiones">
+                <div class="region">
+                    <h3>Región Andina</h3>
+                    <ul class="dulces-lista">
+                        <li>
+                            <h4>Arequipe</h4>
+                            <p>Dulce de leche popular en la región Andina.</p>
+                        </li>
+                        <li>
+                            <h4>Bocadillo Veleño</h4>
+                            <p>Dulce de guayaba muy popular en la región de Valledupar.</p>
+                        </li>
+                        <li>
+                            <h4>Galleta de Sal</h4>
+                            <p>Galleta salada que acompaña bien a las bebidas calientes.</p>
+                        </li>
+                        <li>
+                            <h4>Cuca</h4>
+                            <p>Dulce a base de panela y nueces, típico de la región andina.</p>
+                        </li>
+                        <li>
+                            <h4>Chocoramo</h4>
+                            <p>Pastel de chocolate cubierto de azúcar, popular en la región Andina.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="region">
+                    <h3>Región Caribe</h3>
+                    <ul class="dulces-lista">
+                        <li>
+                            <h4>Bocadillo</h4>
+                            <p>Dulce de guayaba muy popular en la región caribeña.</p>
+                        </li>
+                        <li>
+                            <h4>Cocada</h4>
+                            <p>Dulce hecho a base de coco y azúcar, típico de la región Caribe.</p>
+                        </li>
+                        <li>
+                            <h4>Arequipe</h4>
+                            <p>Dulce de leche que también es popular en la región Caribe.</p>
+                        </li>
+                        <li>
+                            <h4>Tamarindo</h4>
+                            <p>Dulce de tamarindo, que tiene un sabor ácido y dulce.</p>
+                        </li>
+                        <li>
+                            <h4>Café Caramelo</h4>
+                            <p>Caramelo con sabor a café, típico en la región Caribe.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="region">
+                    <h3>Región Pacífica</h3>
+                    <ul class="dulces-lista">
+                        <li>
+                            <h4>Aborrajado</h4>
+                            <p>Plátano maduro relleno con queso y frito, típico de la región Pacífica.</p>
+                        </li>
+                        <li>
+                            <h4>Chocoramo de Coco</h4>
+                            <p>Versión del Chocoramo con relleno de coco.</p>
+                        </li>
+                        <li>
+                            <h4>Chicha de Piña</h4>
+                            <p>Bebida fermentada a base de piña, popular en la región Pacífica.</p>
+                        </li>
+                        <li>
+                            <h4>Galletas de Cuca</h4>
+                            <p>Versión de las Cucas en formato de galleta, típica de la región Pacífica.</p>
+                        </li>
+                        <li>
+                            <h4>Empanadas de Piña</h4>
+                            <p>Empanadas rellenas de dulce de piña.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="region">
+                    <h3>Región Amazonia</h3>
+                    <ul class="dulces-lista">
+                        <li>
+                            <h4>Maracuyá con Miel</h4>
+                            <p>Dulce de maracuyá endulzado con miel, típico de la región Amazónica.</p>
+                        </li>
+                        <li>
+                            <h4>Dulce de Copoazú</h4>
+                            <p>Dulce hecho a base de la fruta copoazú, típica de la región Amazónica.</p>
+                        </li>
+                        <li>
+                            <h4>Chicha de Yuca</h4>
+                            <p>Bebida fermentada a base de yuca, tradicional en la Amazonia.</p>
+                        </li>
+                        <li>
+                            <h4>Gelatina de Guaraná</h4>
+                            <p>Gelatina hecha con extracto de guaraná, popular en la región.</p>
+                        </li>
+                        <li>
+                            <h4>Dulce de Banano</h4>
+                            <p>Dulce hecho a base de banano, típico de la región Amazónica.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="region">
+                    <h3>Región Orinoquía</h3>
+                    <ul class="dulces-lista">
+                        <li>
+                            <h4>Chicha de Maíz</h4>
+                            <p>Bebida fermentada a base de maíz, típica de la región Orinoquía.</p>
+                        </li>
+                        <li>
+                            <h4>Arepas de Maíz</h4>
+                            <p>Arepas elaboradas con maíz, muy populares en la región Orinoquía.</p>
+                        </li>
+                        <li>
+                            <h4>Yuca con Queso</h4>
+                            <p>Plato a base de yuca acompañado de queso, común en la región.</p>
+                        </li>
+                        <li>
+                            <h4>Dulce de Leche</h4>
+                            <p>Dulce de leche, tradicional en la región Orinoquía.</p>
+                        </li>
+                        <li>
+                            <h4>Empanadas de Yuca</h4>
+                            <p>Empanadas rellenas de yuca y queso, típicas de la región.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
